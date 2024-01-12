@@ -1,0 +1,32 @@
+If you are wondering how to transport files from a android device to Arch linux then this guide is for you.
+
+1. Update System (opional but recommended)
+```
+  sudo pacman -Syu
+```
+
+2. Install android-file-transfer
+```
+  sudo pacman -S android-file-transfer
+```
+3. Configure android device
+  Go to setting > Developer options > Allow USB debugging.
+  
+  If developer mode is not enabled press Settings > "About Device" or "About Phone" > "Software Information" > Press the "Build number" button seven (7) times.
+
+4. Attach the cable
+
+  Plug both devices via the USB cable.
+
+5. Run android-file-transfer.
+
+  You will see a simple UI, select the device connected with your computer.
+
+
+6. Troubleshoot:
+
+If the application gives errors saying along the lines of "MTP device not found" check the settings of the android USB debugging configuration. Check if the USB is in debug mode (should have asked for confirmation when the device was plugged in) and the USB mode which could be set to "Tethering", "MIDI", "Charging device only" etc. To change this go to Developer options and search for "Default USB configuration"
+
+7. Congratulations
+
+You can now transfer files.
